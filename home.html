@@ -1,0 +1,154 @@
+<!-- File: home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Student Guidance Portal</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #00796B;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #004D40;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #00695C;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #00796B;
+      margin-top: 0;
+    }
+
+    .btn {
+      background-color: #00796B;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #004D40;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #004D40;
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Guidance Portal</h1>
+    <p>Explore All Courses, Careers & Skills – Stay Ahead!</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Planner</a>
+    <a href="#">Chat</a>
+    <a href="#">Quiz</a>
+    <a href="#">Profile</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>🔍 Career Explorer</h2>
+      <p>Discover career paths based on your interests and skills.</p>
+    </div>
+
+    <div class="card">
+      <h2>📚 All Active Courses</h2>
+      <p>Access SSC, Intermediate, Degree, PG and Certification Courses.</p>
+    </div>
+
+    <div class="card">
+      <h2>💬 Live Doubt Chat</h2>
+      <p>Instant help for your academic doubts, available 24/7.</p>
+      <div class="btn" onclick="chatAlert()">Start Chat</div>
+    </div>
+
+    <div class="card">
+      <h2>🗓️ Study Planner</h2>
+      <p>Organize your schedule with personalized weekly plans.</p>
+    </div>
+
+    <div class="card">
+      <h2>🧠 Quiz Zone</h2>
+      <p>Challenge yourself with quizzes in Math, Science, and GK.</p>
+    </div>
+
+    <div class="card">
+      <h2>👨‍💻 Programming Bootcamp</h2>
+      <p>Start coding with Python, C++, JavaScript & more.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Student Guidance Portal | Learn. Plan. Grow.
+  </footer>
+
+  <script>
+    function chatAlert() {
+      alert("Chat will be integrated in future versions.");
+    }
+  </script>
+
+</body>
+</html>
